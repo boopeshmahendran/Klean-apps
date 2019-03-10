@@ -62,3 +62,6 @@ typings/
 
 # build directory
 dist/
+
+# Mac OS directory view settings files
+.DS_Store
