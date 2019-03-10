@@ -10,32 +10,32 @@ class Header extends React.Component {
     render() {
         return (
             <header className={styles.header}>
-                <div className={styles.header__brand}>
+                <div className={styles.brand}>
                     <img src={logo} alt="logo" />
                     <h2>klean apps</h2>
                 </div>
-                <nav className={styles.header__navigation}>
+                <nav className={styles.navigation}>
                     <ul>
-                        <li className={styles.header__navigation_item}>
+                        <li className={styles.navigation_item}>
                             <img src={home_icon} alt="home icon"/>
                             Home
                         </li>
-                        <li className={styles.header__navigation_item}>
+                        <li className={styles.navigation_item}>
                             <img src={about_us_icon} alt="about us icon"/>
                             About Us
                         </li>
-                        <li className={styles.header__navigation_item}>
+                        <li className={styles.navigation_item}>
                             <img src={services_icon} alt="services icon"/>
                             Services
                         </li>
-                        <li className={styles.header__navigation_item}>
+                        <li className={styles.navigation_item}>
                             <img src={contact_us_icon} alt="contact us icon"/>
                             Contact Us
                         </li>
                     </ul>
                 </nav>
             </header>
-        )
+        );
     }
 }
 

@@ -11,19 +11,19 @@
     margin-right: 5px;
 }
 
-.header__brand {
+.brand {
     display: flex;
     align-items: baseline;
 }
 
-.header__navigation ul {
+.navigation ul {
     display: flex;
     list-style: none;
     align-items: baseline;
     flex-wrap: wrap;
 }
 
-.header__navigation_item {
+.navigation_item {
     display: inline-block;
     padding: 10px;
 }

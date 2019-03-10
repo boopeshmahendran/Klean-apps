@@ -4,11 +4,11 @@
     margin: auto;
 }
 
-.aboutUs__header {
+.header {
     font-size: 3rem;
     font-weight: 400;
 }
 
-.aboutUs__body {
+.body {
     font-size: 2rem;
 }
