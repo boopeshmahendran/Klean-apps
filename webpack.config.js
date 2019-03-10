@@ -1,4 +1,5 @@
 const HtmlWebPackPlugin = require("html-webpack-plugin");
+
 module.exports = {
   module: {
     rules: [
@@ -15,6 +16,22 @@ module.exports = {
           {
             loader: "html-loader",
             options: { minimize: true }
+          }
+        ]
+      },
+      {
+        test: /\.css$/,
+        use: [
+          {
+            loader: "style-loader"
+          },
+          {
+            loader: "css-loader",
+            options: {
+              sourceMap: true,
+              modules: true,
+              localIdentName: "[local]___[hash:base64:5]"
+            }
           }
         ]
       }

@@ -1,9 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import styles from "./App.css";
+
 const App = () => {
   return (
-    <div>
-      <p>React here!</p>
+    <div className={styles.app}>
+      <p>Klean apps</p>
     </div>
   );
 };
