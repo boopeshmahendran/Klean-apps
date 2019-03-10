@@ -1,5 +1,8 @@
+@value variables: "../variables.css";
+@value primaryBrandColor from variables;
+
 .headingLine {
-    border: 1px solid #FF6E6E;
+    border: 1px solid primaryBrandColor;
     width: 8.125rem;
     margin: 5px auto;
 }

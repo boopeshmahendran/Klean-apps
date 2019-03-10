@@ -1,7 +1,10 @@
+@value variables: "./variables.css";
+@value primaryFontColor from variables;
+
 html, body {
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
-    color: #333;
+    color: primaryFontColor;
     font-size: 16px;
 }
