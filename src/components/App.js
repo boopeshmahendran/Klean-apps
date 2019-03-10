@@ -1,11 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import Header from "./Header";
 import "./App.css";
 
 const App = () => {
   return (
     <div className="app">
-      <p>Klean apps</p>
+      <Header />
     </div>
   );
 };

@@ -32,17 +32,17 @@ module.exports = {
               modules: true,
               localIdentName: "[local]___[hash:base64:5]"
             }
-          },
+          }
+        ]
+      },
+      {
+        test: /\.(png|jpg|svg)$/,
+        use: [
           {
-            test: /\.(png|jpg|svg)$/,
-            use: [
-              {
-                loader: 'url-loader',
-                options: {
-                  limit: 3000
-                }
-              }
-            ]
+            loader: 'url-loader',
+            options: {
+              limit: 3000
+            }
           }
         ]
       }
