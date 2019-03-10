@@ -1,0 +1,8 @@
+@value variables: "../variables.css";
+@value secondaryBrandColor from variables;
+
+.sectionLine {
+    border: 1px solid secondaryBrandColor;
+    transform: rotate(-8deg);
+    margin: 0.7rem;
+}
