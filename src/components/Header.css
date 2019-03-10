@@ -2,6 +2,7 @@
     padding: 10px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     flex-wrap: wrap;
 }
 
@@ -16,10 +17,13 @@
     align-items: baseline;
 }
 
+.brand_name {
+    font-size: 2rem;
+}
+
 .navigation ul {
     display: flex;
     list-style: none;
-    align-items: baseline;
     flex-wrap: wrap;
 }
 

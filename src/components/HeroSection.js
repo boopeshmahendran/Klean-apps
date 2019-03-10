@@ -13,7 +13,7 @@ class HeroSection extends React.Component {
                     <div className={styles.heroLine}>
                         We build
                         <span> Klean </span>
-                         apps
+                         Apps
                     </div>
                     <button className={styles.heroButton}>Get Started</button>
                 </div>

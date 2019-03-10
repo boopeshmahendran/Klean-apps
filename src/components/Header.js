@@ -12,7 +12,7 @@ class Header extends React.Component {
             <header className={styles.header}>
                 <div className={styles.brand}>
                     <img src={logo} alt="logo" />
-                    <h2>klean apps</h2>
+                    <div className={styles.brand_name}>klean apps</div>
                 </div>
                 <nav className={styles.navigation}>
                     <ul>

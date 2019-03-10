@@ -9,7 +9,7 @@
 
 .heroImage img {
     max-width: 100%;
-    width: 600px;
+    width: 37.5rem;
     height: auto;
 }
 
@@ -23,13 +23,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex: 1;
 }
 
 .heroButton {
-    padding: 20px 45px;
+    padding: 0.9em 1.7em;
     font-size: 1.5rem;
     background: inherit;
     border: 3px solid #333;
     text-align: center;
-    max-width: 300px;
+    max-width: 18rem;
 }
