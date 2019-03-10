@@ -1,0 +1,29 @@
+.header {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* Make all icons same as font size */
+.header img {
+    width: 1rem;
+    margin-right: 5px;
+}
+
+.header__brand {
+    display: flex;
+    align-items: baseline;
+}
+
+.header__navigation ul {
+    display: flex;
+    list-style: none;
+    align-items: baseline;
+    flex-wrap: wrap;
+}
+
+.header__navigation_item {
+    display: inline-block;
+    padding: 10px;
+}
