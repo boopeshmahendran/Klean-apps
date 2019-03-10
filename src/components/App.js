@@ -1,12 +1,15 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import Header from "./Header";
-import "./App.css";
+import HeroSection from "./HeroSection";
+import AboutUsSection from "./AboutUsSection";
 
 const App = () => {
   return (
     <div className="app">
       <Header />
+      <HeroSection />
+      <AboutUsSection />
     </div>
   );
 };

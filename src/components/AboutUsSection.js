@@ -6,7 +6,7 @@ class AboutUsSection extends React.Component {
     render() {
         return (
             <section className={styles.aboutUs}>
-                <h3 className={styles.header}>About Us</h3>
+                <div className={styles.header}>About Us</div>
                 <HeadingLine />
                 <p className={styles.body}>
                     We are a team of skilled software engineers and creative designers
