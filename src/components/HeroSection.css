@@ -1,3 +1,4 @@
+
 .heroSection {
     display: flex;
     align-items: center;
@@ -33,4 +34,9 @@
     border: 3px solid #333;
     text-align: center;
     max-width: 18rem;
+}
+
+.heroAnimationEl {
+    text-transform: uppercase;
+    color: primaryBrandColor;
 }

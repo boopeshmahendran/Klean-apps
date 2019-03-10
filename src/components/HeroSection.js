@@ -1,4 +1,5 @@
 import React from "react";
+import TextAnimation from "./TextAnimation";
 import heroImage from "../images/heroImage.png";
 import styles from "./HeroSection.css";
 
@@ -11,9 +12,9 @@ class HeroSection extends React.Component {
                 </div>
                 <div className={styles.heroContent}>
                     <div className={styles.heroLine}>
-                        We build
-                        <span> Klean </span>
-                         Apps
+                        <span>We build </span>
+                        <TextAnimation values={["Klean", "Beautiful", "Fast"]} />
+                        <span> Apps</span>
                     </div>
                     <button className={styles.heroButton}>Get Started</button>
                 </div>

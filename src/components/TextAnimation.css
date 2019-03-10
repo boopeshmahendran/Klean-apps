@@ -1,0 +1,6 @@
+@value variables: "../variables.css";
+@value primaryBrandColor from variables;
+
+.textAnimation {
+    color: primaryBrandColor;
+}
