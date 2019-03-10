@@ -1,0 +1,14 @@
+.aboutUs {
+    text-align: center;
+    width: 800px;
+    margin: auto;
+}
+
+.aboutUs__header {
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+.aboutUs__body {
+    font-size: 2rem;
+}
