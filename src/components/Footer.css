@@ -1,0 +1,19 @@
+.footer {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 200px;
+}
+
+.socialIcon {
+    width: 30px;
+    margin-right: 10px;
+}
+
+.navLink {
+    list-style: none;
+}
+
+.navLink a {
+    text-decoration: none;
+    color: inherit;
+}
