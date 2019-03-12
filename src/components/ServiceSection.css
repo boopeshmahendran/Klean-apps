@@ -1,0 +1,20 @@
+.serviceSection {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.imageSection, .contentSection {
+    flex: 1;
+}
+
+.makeContentFirst {
+    order: -1;
+}
+
+.header {
+    font-size: 3rem;
+}
+
+.body {
+    font-size: 1.5rem;
+}

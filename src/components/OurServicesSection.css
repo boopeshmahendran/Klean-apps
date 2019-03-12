@@ -1,0 +1,7 @@
+.header {
+    composes: sectionHeader from "../global.css";
+}
+
+.body {
+    composes: sectionBody from "../global.css";
+}
