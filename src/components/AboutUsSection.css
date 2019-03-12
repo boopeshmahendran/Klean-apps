@@ -5,11 +5,9 @@
 }
 
 .header {
-    font-size: 3rem;
-    font-weight: normal;
-    margin-bottom: 0.5em;
+    composes: sectionHeader from "../global.css";
 }
 
 .body {
-    font-size: 2rem;
+    composes: sectionBody from "../global.css";
 }

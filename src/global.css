@@ -8,3 +8,14 @@ html, body {
     color: primaryFontColor;
     font-size: 16px;
 }
+
+.sectionHeader {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: normal;
+    margin-bottom: 0.5em;
+}
+
+.sectionBody {
+    font-size: 2rem;
+}
