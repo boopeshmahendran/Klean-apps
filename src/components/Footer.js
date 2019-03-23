@@ -5,6 +5,7 @@ import twitter from "../images/icons/twitter.svg";
 import linkedin from "../images/icons/linkedin.svg";
 import instagram from "../images/icons/instagram.svg";
 import logo from "../images/icons/logo.svg";
+import Strings from "../strings";
 
 class Footer extends React.Component {
     render() {
@@ -13,21 +14,20 @@ class Footer extends React.Component {
                 <div className={styles.col1}>
                     <p>
                         <img src={logo} alt="logo"/>
-                        <span>Klean apps</span>
+                        <span>{Strings.BRAND_NAME}</span>
                     </p>
                     <ul>
-                        <li className={styles.navLink}><a href="#0">About Us</a></li>
-                        <li className={styles.navLink}><a href="#0">Services</a></li>
-                        <li className={styles.navLink}><a href="#0">Contact Us</a></li>
+                        <li className={styles.navLink}><a href="#0">{Strings.ABOUT_US_TEXT}</a></li>
+                        <li className={styles.navLink}><a href="#0">{Strings.SERVICES_TEXT}</a></li>
+                        <li className={styles.navLink}><a href="#0">{Strings.CONTACT_US_TEXT}</a></li>
                     </ul>
                 </div>
                 <div className={styles.col2}>
-                    <p>Address</p>
-                    <p>No. 123, abcd street,</p>
-                    <p>Bangalore - 1234</p>
+                    <p>{Strings.ADDRESS_TEXT}</p>
+                    <p>{Strings.ADDRESS}</p>
                 </div>
                 <div className={styles.col3}>
-                    <p>Follow Us on:</p>
+                    <p>{Strings.FOLLOW_US}</p>
                     <p>
                         <img className={styles.socialIcon} src={facebook} alt="facebook" />
                         <img className={styles.socialIcon} src={instagram} alt="instagram" />

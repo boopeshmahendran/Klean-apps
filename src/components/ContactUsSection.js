@@ -10,7 +10,7 @@ class ContactUsSection extends React.Component {
     render() {
         return (
             <section className={styles.contactUsSection}>
-                <p className={styles.contactUsText}>Contact Us</p>
+                <p className={styles.contactUsText}>{Strings.CONTACT_US_TEXT}</p>
                 <HeadingLine
                     align="left"
                     color="#6E6EFF"

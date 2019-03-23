@@ -5,5 +5,11 @@ export default {
     PHONE_TEXT: "Phone",
     PHONE: "1234567890",
     EMAIL_TEXT: "Email",
-    EMAIL: "abcd@gmail.com"
+    EMAIL: "abcd@gmail.com",
+    HOME_TEXT: "Home",
+    ABOUT_US_TEXT: "About Us",
+    SERVICES_TEXT: "Services",
+    CONTACT_US_TEXT: "Contact Us",
+    FOLLOW_US: "Follow Us On:",
+    SEND_MESSAGE: "Send a Message"
 }

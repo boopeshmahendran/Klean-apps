@@ -1,12 +1,13 @@
 import React from "react";
 import styles from "./SendMessageSection.css";
 import HeadingLine from "./HeadingLine";
+import Strings from "../strings";
 
 class SendMessageSection extends React.Component {
     render() {
         return (
             <section className={styles.sendMessageSection}>
-                <p className={styles.sendMessageText}>Send a message</p>
+                <p className={styles.sendMessageText}>{Strings.SEND_MESSAGE}</p>
                 <HeadingLine
                     align="left"
                     color="#6E6EFF"
