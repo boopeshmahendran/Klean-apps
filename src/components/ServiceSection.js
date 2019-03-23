@@ -1,14 +1,16 @@
 import React from "react";
 import styles from "./ServiceSection.css";
 import PropTypes from 'prop-types';
-import classNames from 'classnames';
+import classNames from 'classnames/bind';
+
+const cx = classNames.bind(styles);
 
 class ServiceSection extends React.Component {
     render() {
-        const contentClassNames = classNames({
-            [styles.contentSection]: true,
-            [styles.makeContentFirst]: this.props.order === "contentFirst"
-        });
+        const contentClassNames = cx({
+            contentSection: true,
+            makeContentFirst: this.props.order === "contentFirst"
+       });
 
         return (
             <section className={styles.serviceSection}>
