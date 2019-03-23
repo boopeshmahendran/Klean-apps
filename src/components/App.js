@@ -4,6 +4,8 @@ import Header from "./Header";
 import HeroSection from "./HeroSection";
 import AboutUsSection from "./AboutUsSection";
 import OurServicesSection from "./OurServicesSection";
+import GetInTouchSection from "./GetInTouchSection";
+import Footer from "./Footer";
 
 const App = () => {
   return (
@@ -12,6 +14,8 @@ const App = () => {
       <HeroSection />
       <AboutUsSection />
       <OurServicesSection />
+      <GetInTouchSection />
+      <Footer />
     </div>
   );
 };
