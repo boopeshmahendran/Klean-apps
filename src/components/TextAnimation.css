@@ -4,7 +4,7 @@
 .textAnimation {
     display: inline-block;
     position: relative;
-    width: 200px;
+    width: 210px;
     height: 50px;
 }
 
@@ -13,8 +13,6 @@
     display: inline-flex;
     flex-direction: column;
     color: primaryBrandColor;
-    top: 0;
-    left: 0;
     transition: transform 0.5s;
 }
 
