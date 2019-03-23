@@ -6,12 +6,6 @@
     flex-wrap: wrap;
 }
 
-/* Make all icons same as font size */
-.header img {
-    width: 1rem;
-    margin-right: 5px;
-}
-
 .brand {
     display: flex;
     align-items: baseline;
