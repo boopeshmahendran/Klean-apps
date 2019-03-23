@@ -18,6 +18,7 @@
     font-size: 3rem;
     font-weight: normal;
     margin-bottom: 0.5em;
+    display: flex;
 }
 
 .heroContent {

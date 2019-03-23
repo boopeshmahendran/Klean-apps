@@ -2,5 +2,29 @@
 @value primaryBrandColor from variables;
 
 .textAnimation {
+    display: inline-block;
+    position: relative;
+    width: 200px;
+    height: 50px;
+}
+
+.slider {
+    position: absolute;
+    display: inline-flex;
+    flex-direction: column;
     color: primaryBrandColor;
+    top: 0;
+    left: 0;
+    transition: transform 0.5s;
+}
+
+.textAnimationValue {
+    opacity: 0;
+    transition: opacity 300ms linear;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.textAnimationValue.active {
+    opacity: 1;
 }
