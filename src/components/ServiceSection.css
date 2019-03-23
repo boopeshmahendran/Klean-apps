@@ -1,6 +1,5 @@
 .serviceSection {
     display: flex;
-    justify-content: flex-start;
 }
 
 .imageSection, .contentSection {
