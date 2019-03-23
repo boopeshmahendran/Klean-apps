@@ -15,7 +15,7 @@ class HeadingLine extends React.Component {
         let styles = {};
         if (this.props.color) {
             styles = {
-                color: this.props.color
+                "border-color": this.props.color
             };
         }
 

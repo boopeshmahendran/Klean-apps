@@ -1,0 +1,41 @@
+.sendMessageSection {
+    background: #333333;
+    max-width: 300px;
+    color: #ffffff;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    padding: 20px;
+    margin: 10px;
+}
+
+.sendMessageText {
+    text-transform: uppercase;
+}
+
+.sendMessageForm {
+    display: flex;
+    color: orange;
+    flex-direction: column;
+}
+
+.sendMessageForm > input, .sendMessageForm > textarea {
+    width: 300px;
+    margin: 20px 0px;
+    height: 30px;
+    background: inherit;
+    color: #9B9B9B;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #707070;
+}
+
+.sendMessageForm > textarea {
+    height: 100px;
+}
+
+.sendButton {
+    width: 200px;
+    height: 50px;
+    color: white;
+    background: inherit;
+    border: 1px solid #707070;
+}
