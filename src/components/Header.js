@@ -12,7 +12,7 @@ class Header extends React.Component {
         return (
             <header className={styles.header}>
                 <div className={styles.brand}>
-                    <img src={logo} alt="logo" />
+                    <img className={styles.logo} src={logo} alt="logo" />
                     <div className={styles.brand_name}>{Strings.BRAND_NAME}</div>
                 </div>
                 <nav className={styles.navigation}>

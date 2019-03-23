@@ -8,7 +8,11 @@
 
 .brand {
     display: flex;
-    align-items: baseline;
+}
+
+.logo {
+    height: 2rem;
+    width: 2rem;
 }
 
 .brand_name {
