@@ -1,15 +1,20 @@
 import React from "react";
 import styles from "./Footer.css";
-import facebook from "../images/facebook.svg";
-import twitter from "../images/twitter.svg";
-import linkedin from "../images/linkedin.svg";
-import instagram from "../images/instagram.svg";
+import facebook from "../images/icons/facebook.svg";
+import twitter from "../images/icons/twitter.svg";
+import linkedin from "../images/icons/linkedin.svg";
+import instagram from "../images/icons/instagram.svg";
+import logo from "../images/icons/logo.svg";
 
 class Footer extends React.Component {
     render() {
         return (
             <footer className={styles.footer}>
                 <div className={styles.col1}>
+                    <p>
+                        <img src={logo} alt="logo"/>
+                        <span>Klean apps</span>
+                    </p>
                     <ul>
                         <li className={styles.navLink}><a href="#0">About Us</a></li>
                         <li className={styles.navLink}><a href="#0">Services</a></li>
