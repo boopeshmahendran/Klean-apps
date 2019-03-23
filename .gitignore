@@ -65,3 +65,6 @@ dist/
 
 # Mac OS directory view settings files
 .DS_Store
+
+# secrets file
+secrets.js

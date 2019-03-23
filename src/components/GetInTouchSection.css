@@ -4,4 +4,11 @@
 
 .body {
     composes: sectionBody from "../global.css";
+    display: flex;
+    flex-wrap: wrap;
 }
+
+.body > section {
+    flex: 1;
+}
+
