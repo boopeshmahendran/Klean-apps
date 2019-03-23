@@ -6,19 +6,6 @@
     flex-wrap: wrap;
 }
 
-.brand {
-    display: flex;
-}
-
-.logo {
-    height: 2rem;
-    width: 2rem;
-}
-
-.brand_name {
-    font-size: 2rem;
-}
-
 .navigation ul {
     display: flex;
     list-style: none;

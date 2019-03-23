@@ -1,6 +1,6 @@
 import React from "react";
+import Brand from "./Brand";
 import styles from "./Header.css";
-import logo from "../images/icons/logo.svg";
 import home from "../images/icons/home.svg";
 import about_us from "../images/icons/about_us.svg";
 import services from "../images/icons/services.svg";
@@ -11,10 +11,7 @@ class Header extends React.Component {
     render() {
         return (
             <header className={styles.header}>
-                <div className={styles.brand}>
-                    <img className={styles.logo} src={logo} alt="logo" />
-                    <div className={styles.brand_name}>{Strings.BRAND_NAME}</div>
-                </div>
+                <Brand />
                 <nav className={styles.navigation}>
                     <ul>
                         <li className={styles.navigation_item}>

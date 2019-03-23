@@ -1,0 +1,9 @@
+.brand {
+    display: flex;
+    font-size: 2rem;
+}
+
+.logo {
+    width: 1em;
+    height: 1em;
+}
