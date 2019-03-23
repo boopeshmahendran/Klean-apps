@@ -15,7 +15,7 @@ class HeadingLine extends React.Component {
         let styles = {};
         if (this.props.color) {
             styles = {
-                "border-color": this.props.color
+                borderColor: this.props.color
             };
         }
 
@@ -31,7 +31,7 @@ HeadingLine.defaultProps = {
 
 HeadingLine.propTypes = {
     align: PropTypes.oneOf(["left", "center"]),
-    color: PropTypes.color
+    color: PropTypes.string
 };
 
 export default HeadingLine;
