@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./SendMessageSection.css";
 import HeadingLine from "./HeadingLine";
-import Strings from "../strings";
+import Strings from "../../strings";
 
 class SendMessageSection extends React.Component {
     render() {

@@ -5,7 +5,7 @@ import twitter from "../images/icons/twitter.svg";
 import linkedin from "../images/icons/linkedin.svg";
 import instagram from "../images/icons/instagram.svg";
 import logo from "../images/icons/logo.svg";
-import Strings from "../strings";
+import Strings from "../../strings";
 
 class Footer extends React.Component {
     render() {

@@ -5,7 +5,7 @@ import home from "../images/icons/home.svg";
 import about_us from "../images/icons/about_us.svg";
 import services from "../images/icons/services.svg";
 import contact_us from "../images/icons/contact_us.svg";
-import Strings from "../strings";
+import Strings from "../../strings";
 
 class Header extends React.Component {
     render() {
