@@ -1,5 +1,6 @@
 .brand {
     display: flex;
+    align-items: baseline;
     font-size: 2rem;
 }
 
