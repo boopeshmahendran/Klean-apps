@@ -15,9 +15,9 @@ class Footer extends React.Component {
                 <div className={styles.colWrapper}>
                     <div className={styles.col1}>
                         <ul>
-                            <li className={styles.navLink}><a href="#0">{Strings.ABOUT_US_TEXT}</a></li>
-                            <li className={styles.navLink}><a href="#0">{Strings.SERVICES_TEXT}</a></li>
-                            <li className={styles.navLink}><a href="#0">{Strings.CONTACT_US_TEXT}</a></li>
+                            <li className={styles.navLink}><a href="#about">{Strings.ABOUT_US_TEXT}</a></li>
+                            <li className={styles.navLink}><a href="#services">{Strings.SERVICES_TEXT}</a></li>
+                            <li className={styles.navLink}><a href="#getintouch">{Strings.CONTACT_US_TEXT}</a></li>
                         </ul>
                     </div>
                     <div className={styles.col2}>
