@@ -1,3 +1,5 @@
+@value variables: "../variables.css";
+@value secondaryBrandColor from variables;
 
 .heroSection {
     display: flex;
@@ -36,9 +38,11 @@
     border: 3px solid #333;
     text-align: center;
     max-width: 10rem;
+    transition: all 0.2s ease-in-out; 
+    cursor: pointer;
 }
 
-.heroAnimationEl {
-    text-transform: uppercase;
-    color: primaryBrandColor;
+.heroButton:hover {
+    background: secondaryBrandColor;
+    color: white;
 }
