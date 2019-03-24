@@ -4,7 +4,7 @@
     color: #ffffff;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
     padding: 20px;
-    margin: 10px;
+    margin-left: 20px;
 }
 
 .sendMessageText {
@@ -29,7 +29,7 @@
 }
 
 .sendMessageForm > textarea {
-    height: 100px;
+    min-height: 100px;
 }
 
 .sendButton {

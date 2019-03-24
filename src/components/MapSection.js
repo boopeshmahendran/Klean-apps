@@ -14,10 +14,6 @@ class MapContainer extends React.Component {
                     lat: 12.959370,
                     lng: 77.661133
                 }}
-                style={{
-                    width: '500px',
-                    height: '500px',
-                }}
                 >
                 <Marker
                     title={'Our location'}

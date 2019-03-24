@@ -4,5 +4,4 @@
 
 .body {
     composes: sectionBody from "../global.css";
-    padding: 50px;
 }
