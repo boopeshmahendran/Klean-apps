@@ -3,6 +3,6 @@
 
 .sectionLine {
     border: 1px solid secondaryBrandColor;
-    transform: rotate(-8deg);
-    margin: 0.7rem;
+    transform: rotate(-4deg);
+    margin: 2rem 0;
 }

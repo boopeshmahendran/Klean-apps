@@ -1,9 +1,11 @@
 .serviceSection {
     display: flex;
+    justify-content: space-between;
 }
 
 .imageSection, .contentSection {
     flex: 1;
+    padding: 1.5rem;
 }
 
 .makeContentFirst {
@@ -11,9 +13,10 @@
 }
 
 .header {
-    font-size: 3rem;
+    composes: sectionHeader from "../global.css";
+    text-align: left !important;
 }
 
 .body {
-    font-size: 1.5rem;
+    composes: sectionBody from "../global.css";
 }
