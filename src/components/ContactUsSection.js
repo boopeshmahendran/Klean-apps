@@ -1,4 +1,5 @@
 import React from "react";
+import Card from "./Card";
 import styles from "./ContactUssection.css";
 import HeadingLine from "./HeadingLine";
 import Strings from "../../strings";
@@ -9,7 +10,7 @@ import email from "../images/icons/email.svg";
 class ContactUsSection extends React.Component {
     render() {
         return (
-            <section className={styles.contactUsSection}>
+            <Card>
                 <p className={styles.contactUsText}>{Strings.CONTACT_US_TEXT}</p>
                 <HeadingLine
                     align="left"
@@ -36,7 +37,7 @@ class ContactUsSection extends React.Component {
                     </p>
                     <p>{Strings.EMAIL} </p>
                 </section>
-            </section>
+            </Card>
         );
     }
 }

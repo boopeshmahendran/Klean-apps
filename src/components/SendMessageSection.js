@@ -1,12 +1,13 @@
 import React from "react";
 import styles from "./SendMessageSection.css";
 import HeadingLine from "./HeadingLine";
+import Card from "./Card";
 import Strings from "../../strings";
 
 class SendMessageSection extends React.Component {
     render() {
         return (
-            <section className={styles.sendMessageSection}>
+            <Card className={styles.sendMessageSection}>
                 <p className={styles.sendMessageText}>{Strings.SEND_MESSAGE}</p>
                 <HeadingLine
                     align="left"
@@ -18,7 +19,7 @@ class SendMessageSection extends React.Component {
                     <textarea rows="4" cols="50" placeholder="Message" />
                     <button className={styles.sendButton} type="submit">Send</button>
                 </form>
-            </section>
+            </Card>
         );
     }
 }
