@@ -5,25 +5,26 @@
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
     padding: 20px;
     margin-left: 20px;
+    font-size: 1.25rem;
 }
 
 .sendMessageText {
     text-transform: uppercase;
+    margin: 10px 0;
 }
 
 .sendMessageForm {
     display: flex;
-    color: orange;
     flex-direction: column;
 }
 
 .sendMessageForm > input, .sendMessageForm > textarea {
-    width: 300px;
     margin: 20px 0px;
     height: 30px;
     background: inherit;
     color: #9B9B9B;
-    padding: 10px;
+    padding: 0 10px;
+    font-size: inherit;
     box-sizing: border-box;
     border: 1px solid #707070;
 }
@@ -36,6 +37,14 @@
     width: 200px;
     height: 50px;
     color: white;
+    font-size: inherit;
     background: inherit;
     border: 1px solid #707070;
+    transition: all 0.2s linear;
+    cursor: pointer;
+}
+
+.sendButton:hover {
+    color: #333333;
+    background: white;
 }

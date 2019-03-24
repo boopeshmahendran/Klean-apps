@@ -1,5 +1,6 @@
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 const postcssModulesValues = require("postcss-modules-values");
+const autoprefixer = require("autoprefixer");
 
 module.exports = {
   module: {
@@ -37,7 +38,7 @@ module.exports = {
           {
             loader: 'postcss-loader',
             options: {
-                plugins: [postcssModulesValues]
+                plugins: [postcssModulesValues, autoprefixer]
             }
           }
         ]
