@@ -5,7 +5,7 @@ import HeadingLine from "./HeadingLine";
 class AboutUsSection extends React.Component {
     render() {
         return (
-            <section className={styles.aboutUs}>
+            <section id="about" className={styles.aboutUs}>
                 <div className={styles.header}>About Us</div>
                 <HeadingLine />
                 <p className={styles.body}>

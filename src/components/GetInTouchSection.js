@@ -8,7 +8,7 @@ import MapSection from "./MapSection";
 class GetInTouchSection extends React.Component {
     render() {
         return (
-            <section>
+            <section id="getintouch">
                 <div className={styles.header}>Get In Touch</div>
                 <HeadingLine />
                 <div className={styles.body}>

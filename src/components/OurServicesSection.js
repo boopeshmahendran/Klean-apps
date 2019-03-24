@@ -9,7 +9,7 @@ import ServiceSection from "./ServiceSection";
 class OurServicesSection extends React.Component {
     render() {
         return (
-            <section>
+            <section id="services">
                 <SectionLine></SectionLine>
                 <div className={styles.header}>Our Services</div>
                 <HeadingLine />

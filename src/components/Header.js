@@ -15,20 +15,28 @@ class Header extends React.Component {
                 <nav className={styles.navigation}>
                     <ul>
                         <li className={styles.navigation_item}>
-                            <img className="icon" src={home} alt="home icon"/>
-                            {Strings.HOME_TEXT}
+                            <a href="#">
+                                <img className="icon" src={home} alt="home icon" />
+                                {Strings.HOME_TEXT}
+                            </a>
                         </li>
                         <li className={styles.navigation_item}>
-                            <img className="icon" src={about_us} alt="about us icon"/>
-                            {Strings.ABOUT_US_TEXT}
+                            <a href="#about">
+                                <img className="icon" src={about_us} alt="about us icon" />
+                                {Strings.ABOUT_US_TEXT}
+                            </a>
                         </li>
                         <li className={styles.navigation_item}>
+                            <a href="#services">
                             <img className="icon" src={services} alt="services icon"/>
                             {Strings.SERVICES_TEXT}
+                            </a>
                         </li>
                         <li className={styles.navigation_item}>
-                            <img className="icon" src={contact_us} alt="contact us icon"/>
-                            {Strings.CONTACT_US_TEXT}
+                            <a href="#getintouch">
+                                <img className="icon" src={contact_us} alt="contact us icon" />
+                                {Strings.CONTACT_US_TEXT}
+                            </a>
                         </li>
                     </ul>
                 </nav>

@@ -1,3 +1,6 @@
+@value variables: "../variables.css";
+@value secondaryBrandColor from variables;
+
 .header {
     padding: 10px;
     display: flex;
@@ -12,7 +15,15 @@
     flex-wrap: wrap;
 }
 
-.navigation_item {
+.navigation_item a{
+    text-decoration: none;
     display: inline-block;
     padding: 10px;
+    color: inherit;
+    transition: all 0.2s ease-in-out;
+}
+
+.navigation_item a:hover {
+    background: secondaryBrandColor;
+    color: white;
 }
