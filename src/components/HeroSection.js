@@ -13,8 +13,10 @@ class HeroSection extends React.Component {
                 <div className={styles.heroContent}>
                     <div className={styles.heroLine}>
                         <span>We build </span>
-                        <TextAnimation values={["Klean", "Beautiful", "Fast"]} />
-                        <span> Apps</span>
+                        <TextAnimation 
+                            values={["Beautiful Websites", "Awesome Apps", "Creative Websites"]}
+                            animationDelay={1000}
+                        />
                     </div>
                     <button className={styles.heroButton}>Get Started</button>
                 </div>

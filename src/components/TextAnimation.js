@@ -10,7 +10,8 @@ class TextAnimation extends React.Component {
         super(props);
 
         this.state = {
-            activeIndex: 0
+            activeIndex: 0,
+            incrementValue: -1
         };
 
         this.animationInterval = null;
@@ -26,9 +27,20 @@ class TextAnimation extends React.Component {
 
     startAnimation() {
         this.animationInterval = setInterval(() => {
-            this.setState({
-                activeIndex: (this.state.activeIndex + 1) % this.props.values.length
-            });
+            this.setState((state, props) => {
+                let incrementValue = state.incrementValue;
+                if (
+                    state.activeIndex === 0 ||
+                    state.activeIndex === props.values.length - 1
+                ) {
+                    incrementValue = -incrementValue;
+                }
+
+                return {
+                    activeIndex: state.activeIndex + incrementValue,
+                    incrementValue
+                }
+            })
         }, this.props.animationDelay);
     }
 
