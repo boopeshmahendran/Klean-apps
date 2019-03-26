@@ -6,6 +6,7 @@ import about_us from "../images/icons/about_us.svg";
 import services from "../images/icons/services.svg";
 import contact_us from "../images/icons/contact_us.svg";
 import Strings from "../../strings";
+import { smoothScroll } from "../utils";
 
 class Header extends React.Component {
     render() {
@@ -15,25 +16,25 @@ class Header extends React.Component {
                 <nav className={styles.navigation}>
                     <ul>
                         <li className={styles.navigation_item}>
-                            <a href="#">
+                            <a href="#" onClick={smoothScroll}>
                                 <img className="icon" src={home} alt="home icon" />
                                 {Strings.HOME_TEXT}
                             </a>
                         </li>
                         <li className={styles.navigation_item}>
-                            <a href="#about">
+                            <a href="#about" onClick={smoothScroll}>
                                 <img className="icon" src={about_us} alt="about us icon" />
                                 {Strings.ABOUT_US_TEXT}
                             </a>
                         </li>
                         <li className={styles.navigation_item}>
-                            <a href="#services">
+                            <a href="#services" onClick={smoothScroll}>
                             <img className="icon" src={services} alt="services icon"/>
                             {Strings.SERVICES_TEXT}
                             </a>
                         </li>
                         <li className={styles.navigation_item}>
-                            <a href="#getintouch">
+                            <a href="#getintouch" onClick={smoothScroll}>
                                 <img className="icon" src={contact_us} alt="contact us icon" />
                                 {Strings.CONTACT_US_TEXT}
                             </a>
