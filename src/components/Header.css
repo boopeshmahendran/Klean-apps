@@ -27,3 +27,8 @@
     background: secondaryBrandColor;
     color: white;
 }
+
+.navigation_item a:focus {
+    background: secondaryBrandColor;
+    color: white;
+}
