@@ -14,7 +14,20 @@ class HeroSection extends React.Component {
                     <div className={styles.heroLine}>
                         <span>We build </span>
                         <TextAnimation 
-                            values={["Beautiful Websites", "Awesome Apps", "Creative Websites"]}
+                            values={[
+                                <span>
+                                    <span style={{color: "#6e6eff"}}>Beautiful </span>
+                                    <span style={{color: "#ff6e6e"}}>Websites </span>
+                                </span>,
+                                <span>
+                                    <span style={{color: "#ff6e6e"}}>Awesome </span>
+                                    <span style={{color: "#6e6eff"}}>Apps </span>
+                                </span>,
+                                <span>
+                                    <span style={{color: "#6e6eff"}}>Creative </span>
+                                    <span style={{color: "#ff6e6e"}}>Websites </span>
+                                </span>,
+                            ]}
                             animationDelay={1000}
                         />
                     </div>
