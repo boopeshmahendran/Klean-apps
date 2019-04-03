@@ -6,6 +6,7 @@ import Strings from "../../strings";
 import address from "../images/icons/address.svg";
 import phone from "../images/icons/phone.svg";
 import email from "../images/icons/email.svg";
+import CSS_CONSTANTS from "../css-constants";
 
 class ContactUsSection extends React.Component {
     render() {
@@ -14,7 +15,7 @@ class ContactUsSection extends React.Component {
                 <p className={styles.contactUsText}>{Strings.CONTACT_US_TEXT}</p>
                 <HeadingLine
                     align="left"
-                    color="#6E6EFF"
+                    color={CSS_CONSTANTS.secondaryBrandColor}
                 />
                 <section>
                     <p>

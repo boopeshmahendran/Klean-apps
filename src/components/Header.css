@@ -1,12 +1,10 @@
-@value variables: "../variables.css";
-@value secondaryBrandColor from variables;
-
 .header {
     padding: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    background: var(--color);
 }
 
 .navigation ul {
@@ -24,11 +22,11 @@
 }
 
 .navigation_item a:hover {
-    background: secondaryBrandColor;
+    background: var(--secondaryBrandColor);
     color: white;
 }
 
 .navigation_item a:focus {
-    background: secondaryBrandColor;
+    background: var(--secondaryBrandColor);
     color: white;
 }

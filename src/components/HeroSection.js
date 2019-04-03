@@ -2,6 +2,7 @@ import React from "react";
 import TextAnimation from "./TextAnimation";
 import heroImage from "../images/heroImage.png";
 import styles from "./HeroSection.css";
+import CSS_CONSTANTS from "../css-constants";
 
 class HeroSection extends React.Component {
     render() {
@@ -16,16 +17,16 @@ class HeroSection extends React.Component {
                         <TextAnimation 
                             values={[
                                 <span>
-                                    <span style={{color: "#6e6eff"}}>Beautiful </span>
-                                    <span style={{color: "#ff6e6e"}}>Websites </span>
+                                    <span style={{color: CSS_CONSTANTS.secondaryBrandColor}}>Beautiful </span>
+                                    <span style={{color: CSS_CONSTANTS.primaryBrandColor}}>Websites </span>
                                 </span>,
                                 <span>
-                                    <span style={{color: "#ff6e6e"}}>Awesome </span>
-                                    <span style={{color: "#6e6eff"}}>Apps </span>
+                                    <span style={{color: CSS_CONSTANTS.primaryBrandColor}}>Awesome </span>
+                                    <span style={{color: CSS_CONSTANTS.secondaryBrandColor}}>Apps </span>
                                 </span>,
                                 <span>
-                                    <span style={{color: "#6e6eff"}}>Creative </span>
-                                    <span style={{color: "#ff6e6e"}}>Websites </span>
+                                    <span style={{color: CSS_CONSTANTS.primaryBrandColor}}>Creative </span>
+                                    <span style={{color: CSS_CONSTANTS.secondaryBrandColor}}>Websites </span>
                                 </span>,
                             ]}
                             animationDelay={1000}

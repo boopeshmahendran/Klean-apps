@@ -3,6 +3,7 @@ import styles from "./SendMessageSection.css";
 import HeadingLine from "./HeadingLine";
 import Card from "./Card";
 import Strings from "../../strings";
+import CSS_CONSTANTS from "../css-constants";
 
 class SendMessageSection extends React.Component {
     render() {
@@ -11,7 +12,7 @@ class SendMessageSection extends React.Component {
                 <p className={styles.sendMessageText}>{Strings.SEND_MESSAGE}</p>
                 <HeadingLine
                     align="left"
-                    color="#6E6EFF"
+                    color={CSS_CONSTANTS.secondaryBrandColor}
                 />
                 <form className={styles.sendMessageForm}>
                     <input type="text" placeholder="Name" />

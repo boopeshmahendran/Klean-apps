@@ -1,6 +1,7 @@
 const HtmlWebPackPlugin = require("html-webpack-plugin");
-const postcssModulesValues = require("postcss-modules-values");
 const autoprefixer = require("autoprefixer");
+const customProperties = require("postcss-custom-properties");
+const CSS_CONSTANTS = require("./src/css-constants");
 
 module.exports = {
   module: {
@@ -32,13 +33,26 @@ module.exports = {
             options: {
               sourceMap: true,
               modules: true,
+              importLoaders: 1,
               localIdentName: "[local]___[hash:base64:5]"
             }
           },
           {
             loader: 'postcss-loader',
             options: {
-                plugins: [postcssModulesValues, autoprefixer]
+              plugins: function () {
+                return [
+                  customProperties({
+                    variables: CSS_CONSTANTS
+                  }),
+                  // Safari and Internet Explorer don't auto-update and so are listed
+                  // here explicitly. Firefox and Chrome are handled by including all
+                  // browsers which have > 1% market share.
+                  autoprefixer({
+                    browsers: ["safari >= 7", "explorer >= 9", "> 1%"]
+                  })
+                ];
+              }
             }
           }
         ]
