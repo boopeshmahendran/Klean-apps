@@ -5,15 +5,30 @@ import home from "../images/icons/home.svg";
 import about_us from "../images/icons/about_us.svg";
 import services from "../images/icons/services.svg";
 import contact_us from "../images/icons/contact_us.svg";
+import burger from "../images/icons/burger.svg";
 import Strings from "../../strings";
 import { smoothScroll } from "../utils";
+import SideNavBar from "./SideNavBar";
 
 class Header extends React.Component {
+    constructor(props) {
+        super(props);
+
+        this.openSideNav = this.openSideNav.bind(this);
+        this.sideBarRef = React.createRef();
+    }
+    openSideNav() {
+        this.sideBarRef.current.open();
+    }
     render() {
         return (
             <header className={styles.header}>
+                <SideNavBar ref={this.sideBarRef} />
+                <a href="#0" onClick={this.openSideNav}>
+                    <img className="icon" src={burger} alt="burger icon" />
+                </a>
                 <Brand />
-                <nav className={styles.navigation}>
+                {/* <nav className={styles.navigation}>
                     <ul>
                         <li className={styles.navigation_item}>
                             <a href="#" onClick={smoothScroll}>
@@ -40,7 +55,7 @@ class Header extends React.Component {
                             </a>
                         </li>
                     </ul>
-                </nav>
+                </nav> */}
             </header>
         );
     }
