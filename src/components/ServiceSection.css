@@ -1,6 +1,11 @@
 .serviceSection {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.imageSection img {
+    max-width: 100%;
 }
 
 .imageSection, .contentSection {
@@ -20,3 +25,9 @@
 .body {
     composes: sectionBody from "../global.css";
 }
+
+@media only screen and (max-width: 768px) {
+    .serviceSection {
+        display: block;
+    }
+} 

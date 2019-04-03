@@ -42,3 +42,9 @@
     color: #333333;
     background: white;
 }
+
+@media only screen and (max-width: 768px) {
+    .sendMessageSection {
+        margin-left: 0px;
+    }
+} 
