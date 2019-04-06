@@ -25,12 +25,7 @@
     transition: all 0.2s ease-in-out;
 }
 
-.navigation_item a:hover {
-    background: var(--secondaryBrandColor);
-    color: white;
-}
-
-.navigation_item a:focus {
-    background: var(--secondaryBrandColor);
+.navigation_item a:hover, .navigation_item a:focus {
+    background: var(--accentColor);
     color: white;
 }
