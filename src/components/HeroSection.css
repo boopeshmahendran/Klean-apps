@@ -1,46 +1,66 @@
 .heroSection {
+    position: relative;
+}
+
+.heroContent{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 700px;
+    width: 100%;
     display: flex;
-    align-items: center;
-    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 6em;
 }
 
-.heroImage, .heroContent {
-    margin: 20px;
+.heroContent1 {
+    background: url("../images/heroImage1.png");
 }
 
-.heroImage img {
-    max-width: 100%;
-    width: 37.5rem;
-    height: auto;
+.heroContent2 {
+    background: url("../images/heroImage2.png");
+}
+
+.heroContent3 {
+    background: url("../images/heroImage3.png");
 }
 
 .heroLine {
     font-size: 2rem;
-    white-space: nowrap;
-    font-weight: normal;
+    color: #fff;
     margin-bottom: 0.5em;
-    display: flex;
-}
-
-.heroContent {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    margin-left: 50px;
 }
 
 .heroButton {
     padding: 0.5em 1.3em;
     font-size: 1rem;
-    background: inherit;
-    border: 3px solid #333;
+    background: var(--accentColor);
+    color: var(--primaryColor);
+    border: 3px solid var(--accentColor);
     text-align: center;
     max-width: 10rem;
-    transition: all 0.2s ease-in-out; 
+    transition: 0.5s; 
     cursor: pointer;
+    position: relative;
 }
 
 .heroButton:hover {
-    background: var(--secondaryBrandColor);
-    color: white;
+    padding-left: 0.6em;
+    padding-right: 2em;
+}
+
+.heroButton:after {
+    position: absolute;
+    content: '→';
+    opacity: 0;
+    transition: 0.5s;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -1.5em;
+}
+
+.heroButton:hover:after {
+    opacity: 1;
+    right: 0.7em;
 }

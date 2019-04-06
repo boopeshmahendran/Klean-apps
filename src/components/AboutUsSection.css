@@ -1,14 +1,18 @@
 .aboutUs {
-    text-align: center;
-    max-width: 800px;
-    padding: 5px;
+    display: flex;
+    padding: 3rem;
     margin: 40px auto 70px;
+    max-width: 800px;
+    color: var(--primaryColor);
+    align-items: center;
 }
 
 .header {
     composes: sectionHeader from "../global.css";
+    flex: 1;
 }
 
 .body {
     composes: sectionBody from "../global.css";
+    flex: 2;
 }

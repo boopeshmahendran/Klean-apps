@@ -1,5 +1,5 @@
 export default {
-    BRAND_NAME: "Klean apps",
+    BRAND_NAME: "App Heaven",
     ADDRESS_TEXT: "Address",
     ADDRESS: "No. 123, abcd street, Bangalore - 1234",
     PHONE_TEXT: "Phone",

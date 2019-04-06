@@ -1,7 +1,8 @@
 .headingLine {
-    border: 1px solid var(--primaryBrandColor);
-    width: 8.125rem;
-    margin: 5px auto;
+    border: 1px solid var(--primaryColor);
+    margin: 0 2rem;
+    width: 200px;
+    transform: rotate(-80deg);
 }
 
 .alignLeft {

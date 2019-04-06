@@ -1,6 +1,5 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import Header from "./Header";
 import HeroSection from "./HeroSection";
 import AboutUsSection from "./AboutUsSection";
 import OurServicesSection from "./OurServicesSection";
@@ -10,12 +9,11 @@ import Footer from "./Footer";
 const App = () => {
   return (
     <div className="app">
-      <Header />
       <HeroSection />
       <AboutUsSection />
-      <OurServicesSection />
-      <GetInTouchSection />
-      <Footer />
+      {/* <OurServicesSection /> */}
+      {/* <GetInTouchSection /> */}
+      {/* <Footer /> */}
     </div>
   );
 };
