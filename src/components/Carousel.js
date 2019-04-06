@@ -30,9 +30,27 @@ class Carousel extends React.Component {
             });
         }, this._animationDelay);
     }
+
+    resetAnimation() {
+        this.endAnimation();
+        this.startAnimation();
+    }
+    
+    handleIndicatorClick(index) {
+        this.setState({
+            activeIndex: index
+        });
+        this.resetAnimation();
+    }
+
     componentDidMount() {
         this.startAnimation();
     }
+
+    componentWillUnmount() {
+        this.endAnimation();
+    }
+
     render() {
         const carouselIndicators = this.props.children.map((item, index) => {
             const classes = cx({
@@ -41,7 +59,7 @@ class Carousel extends React.Component {
             });
             
             return (
-                <li key={index} className={classes}>
+                <li key={index} className={classes} onClick={() => this.handleIndicatorClick(index)}>
                 </li>
             )
         })
