@@ -23,12 +23,12 @@ class Header extends React.Component {
     render() {
         return (
             <header className={styles.header}>
-                <SideNavBar ref={this.sideBarRef} />
-                <a href="#0" onClick={this.openSideNav}>
+                {/* <SideNavBar ref={this.sideBarRef} /> */}
+                {/* <a href="#0" onClick={this.openSideNav}>
                     <img className="icon" src={burger} alt="burger icon" />
-                </a>
+                </a> */}
                 <Brand />
-                {/* <nav className={styles.navigation}>
+                <nav className={styles.navigation}>
                     <ul>
                         <li className={styles.navigation_item}>
                             <a href="#" onClick={smoothScroll}>
@@ -55,7 +55,7 @@ class Header extends React.Component {
                             </a>
                         </li>
                     </ul>
-                </nav> */}
+                </nav>
             </header>
         );
     }
