@@ -13,22 +13,20 @@ class HeroSection extends React.Component {
                     <div className={styles.heroContent + ' ' + styles.heroContent1}>
                         <div className={styles.heroLine}>
                             <p>
-                                <span>
-                                    We build&nbsp;
-                                        </span>
+                                   {"We build "}
                                 <span style={{ color: CSS_CONSTANTS.accentColor }}>
-                                    beautiful&nbsp;
+                                    {"beautiful "}
                                         </span>
                                 <span>
-                                    and&nbsp;
+                                    {"and "}
                                         </span>
                                 <span style={{ color: CSS_CONSTANTS.accentColor }}>
-                                    heavenly
+                                    {"heavenly "}
                                         </span>
                             </p>
                             <p>
                                 <span style={{ color: CSS_CONSTANTS.accentColor }}>
-                                    apps and websites
+                                    {"apps and websites"}
                                         </span>
                             </p>
                         </div>
@@ -37,22 +35,20 @@ class HeroSection extends React.Component {
                     <div className={styles.heroContent + ' ' + styles.heroContent2}>
                         <div className={styles.heroLine}>
                             <p>
-                                <span>
-                                    We build&nbsp;
-                                        </span>
+                                   {"We build "}
                                 <span style={{ color: CSS_CONSTANTS.accentColor }}>
-                                    beautiful&nbsp;
+                                    {"beautiful "}
                                         </span>
                                 <span>
-                                    and&nbsp;
+                                    {"and "}
                                         </span>
                                 <span style={{ color: CSS_CONSTANTS.accentColor }}>
-                                    heavenly
+                                    {"heavenly "}
                                         </span>
                             </p>
                             <p>
                                 <span style={{ color: CSS_CONSTANTS.accentColor }}>
-                                    apps and websites
+                                    {"apps and websites"}
                                         </span>
                             </p>
                         </div>
@@ -61,22 +57,20 @@ class HeroSection extends React.Component {
                     <div className={styles.heroContent + ' ' + styles.heroContent3}>
                         <div className={styles.heroLine}>
                             <p>
-                                <span>
-                                    We build&nbsp;
-                                        </span>
+                                   {"We build "}
                                 <span style={{ color: CSS_CONSTANTS.accentColor }}>
-                                    beautiful&nbsp;
+                                    {"beautiful "}
                                         </span>
                                 <span>
-                                    and&nbsp;
+                                    {"and "}
                                         </span>
                                 <span style={{ color: CSS_CONSTANTS.accentColor }}>
-                                    heavenly
+                                    {"heavenly "}
                                         </span>
                             </p>
                             <p>
                                 <span style={{ color: CSS_CONSTANTS.accentColor }}>
-                                    apps and websites
+                                    {"apps and websites"}
                                         </span>
                             </p>
                         </div>
