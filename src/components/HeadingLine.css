@@ -1,10 +1,5 @@
 .headingLine {
-    border: 1px solid var(--primaryColor);
-    margin: 0 2rem;
-    width: 200px;
-    transform: rotate(-80deg);
-}
-
-.alignLeft {
-    margin: 0px;
+    border: 1px solid white;
+    width: 10rem;
+    margin: 1.25rem auto;
 }

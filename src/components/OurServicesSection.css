@@ -1,7 +1,15 @@
+.ourServicesSection {
+    padding: 3rem;
+    background: var(--primaryColor);
+    color: white;
+}
 .header {
     composes: sectionHeader from "../global.css";
+    text-align: center;
 }
 
 .body {
     composes: sectionBody from "../global.css";
+    display: flex;
+    justify-content: space-around;
 }

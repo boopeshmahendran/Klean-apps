@@ -9,7 +9,6 @@ class HeadingLine extends React.Component {
     render() {
         const classes = cx({
             headingLine: true,
-            alignLeft: this.props.align === "left"
        });
 
         let styles = {};
@@ -25,12 +24,7 @@ class HeadingLine extends React.Component {
     }
 }
 
-HeadingLine.defaultProps = {
-    align: "center"
-};
-
 HeadingLine.propTypes = {
-    align: PropTypes.oneOf(["left", "center"]),
     color: PropTypes.string
 };
 

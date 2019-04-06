@@ -1,33 +1,26 @@
 .serviceSection {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    position: relative;
+    background: white;
+    color: var(--primaryFontColor);
 }
 
-.imageSection img {
-    max-width: 100%;
-}
-
-.imageSection, .contentSection {
-    flex: 1;
+.imageSection {
+    position: absolute;
+    top: 50%;
+    width: 50px;
+    height: 50px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    border-radius: 100%;
     padding: 1.5rem;
+    background: white;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
 }
 
-.makeContentFirst {
-    order: -1;
+.contentSection {
+    max-width: 250px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    padding: 0.5rem 1.25rem 0.5rem 4rem;
+    height: 100px;
 }
-
-.header {
-    composes: sectionHeader from "../global.css";
-    text-align: left !important;
-}
-
-.body {
-    composes: sectionBody from "../global.css";
-}
-
-@media only screen and (max-width: 768px) {
-    .serviceSection {
-        display: block;
-    }
-} 

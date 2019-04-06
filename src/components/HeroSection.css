@@ -48,6 +48,7 @@
 .heroButton:hover {
     padding-left: 0.6em;
     padding-right: 2em;
+    transform: scale(1.1);
 }
 
 .heroButton:after {

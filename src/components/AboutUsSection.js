@@ -1,17 +1,16 @@
 import React from "react";
 import styles from "./AboutUsSection.css";
 import HeadingLine from "./HeadingLine";
+import Strings from "../../strings";
 
 class AboutUsSection extends React.Component {
     render() {
         return (
             <section id="about" className={styles.aboutUs}>
-                <div className={styles.header}>About Us</div>
-                <HeadingLine />
+                <div className={styles.header}>{Strings.ABOUT_US_HEADER}</div>
+                <hr className={styles.seperationLine} />
                 <p className={styles.body}>
-                    We are a team of skilled software engineers and creative designers
-                    who are focused on delivering beautiful and high quality software products
-                    to our clients.
+                    {Strings.ABOUT_US_BODY}
                 </p>
             </section>
         );

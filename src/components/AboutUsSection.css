@@ -12,6 +12,13 @@
     flex: 1;
 }
 
+.seperationLine {
+    border: 1px solid var(--primaryColor);
+    margin: 0 2rem;
+    width: 200px;
+    transform: rotate(-80deg);
+}
+
 .body {
     composes: sectionBody from "../global.css";
     flex: 2;
