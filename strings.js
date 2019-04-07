@@ -16,6 +16,7 @@ export default {
     ABOUT_US_BODY: "We are a team of skilled software engineers and creative designers who are focused on delivering beautiful and high quality software products to our clients.",
 
     SERVICES_HEADER: "Services We Offer",
+
     FOLLOW_US: "Follow Us On:",
     SEND_MESSAGE: "Send a Message"
 }

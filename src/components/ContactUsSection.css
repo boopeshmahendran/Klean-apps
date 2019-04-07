@@ -1,4 +1,15 @@
-.contactUsText {
-    text-transform: uppercase;
-    margin: 10px 0;
+.contactUsSection {
+    color: white;
+    max-width: 300px;
+}
+
+.section {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.section img {
+    width: auto;
+    height: 100%;
 }

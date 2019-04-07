@@ -1,10 +1,7 @@
 .sendMessageSection {
-    margin-left: 20px;
-}
-
-.sendMessageText {
-    text-transform: uppercase;
-    margin: 10px 0;
+    max-width: 400px;
+    color: var(--secondaryFontColor);
+    margin-bottom: 20px;
 }
 
 .sendMessageForm {
@@ -14,37 +11,30 @@
 
 .sendMessageForm > input, .sendMessageForm > textarea {
     margin: 20px 0px;
-    height: 30px;
-    background: inherit;
-    color: #9B9B9B;
-    padding: 10px;
-    font-size: inherit;
+    height: 60px;
+    width: 100%;
+    padding: 15px;
     box-sizing: border-box;
+    font-size: inherit;
     border: 1px solid #707070;
 }
 
 .sendMessageForm > textarea {
-    min-height: 100px;
+    min-height: 200px;
 }
 
 .sendButton {
     width: 200px;
     height: 50px;
-    color: white;
     font-size: inherit;
-    background: inherit;
-    border: 1px solid #707070;
+    background: var(--accentColor);
+    color: var(--primaryColor);
+    border: none;
     transition: all 0.2s linear;
     cursor: pointer;
 }
 
 .sendButton:hover {
-    color: #333333;
-    background: white;
+    color: var(--accentColor);
+    background: var(--primaryColor);
 }
-
-@media only screen and (max-width: 768px) {
-    .sendMessageSection {
-        margin-left: 0px;
-    }
-} 

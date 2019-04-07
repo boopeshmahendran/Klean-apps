@@ -1,1 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 20 16"><path d="M20,4H4A2,2,0,0,0,2.01,6L2,18a2.006,2.006,0,0,0,2,2H20a2.006,2.006,0,0,0,2-2V6A2.006,2.006,0,0,0,20,4Zm0,4-8,5L4,8V6l8,5,8-5Z" transform="translate(-2 -4)" fill="#6e6eff"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="31.25" height="25" viewBox="0 0 31.25 25">
+  <g id="Group_14" data-name="Group 14" transform="translate(0 -15)">
+    <path id="ic_email_24px" d="M30.125,4h-25A3.121,3.121,0,0,0,2.016,7.125L2,25.875A3.134,3.134,0,0,0,5.125,29h25a3.134,3.134,0,0,0,3.125-3.125V7.125A3.134,3.134,0,0,0,30.125,4Zm0,6.25-12.5,7.813L5.125,10.25V7.125l12.5,7.813,12.5-7.812Z" transform="translate(-2 11)" fill="#ffc107"/>
+  </g>
+</svg>
