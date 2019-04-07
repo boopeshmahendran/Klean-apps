@@ -1,5 +1,5 @@
 .footer {
-    padding: 150px 50px 0;
+    padding: 2rem 50px 0;
 }
 
 .colWrapper {
@@ -14,8 +14,9 @@
     align-items: flex-start;
 }
 
-.col1 ul {
+.col1 ul, .col1 li {
     padding-left: 0;
+    margin-left: 0;
 }
 
 .socialIcon {
@@ -36,4 +37,5 @@
 .logo {
     width: 1em;
     height: 1em;
+    margin-right: 10px;
 }
