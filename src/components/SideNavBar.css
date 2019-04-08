@@ -34,6 +34,11 @@
     transition: transform 0.3s ease-in-out;
 }
 
+.header {
+    padding: 10px;
+    display: flex;
+}
+
 .closeBtn {
     position: absolute;
     top: 20px;
@@ -55,12 +60,16 @@
 .navigation ul{
     list-style: none;
     font-size: 1.5rem;
+    padding-left: 0;
 }
 
 .navigation_item {
-    padding: 10px;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
 }
 
-.navigation a {
-    text-decoration: none;
+.navigation_item img {
+    margin-right: 30px;
+    vertical-align: middle;
 }
