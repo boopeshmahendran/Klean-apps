@@ -23,10 +23,10 @@ class Header extends React.Component {
     render() {
         return (
             <header className={styles.header}>
-                {/* <SideNavBar ref={this.sideBarRef} /> */}
-                {/* <a href="#0" onClick={this.openSideNav}>
-                    <img className="icon" src={burger} alt="burger icon" />
-                </a> */}
+                <SideNavBar ref={this.sideBarRef} />
+                <a className={styles.hamburger} href="#0" onClick={this.openSideNav}>
+                    <img src={burger} alt="burger icon" />
+                </a>
                 <Brand />
                 <nav className={styles.navigation}>
                     <ul>

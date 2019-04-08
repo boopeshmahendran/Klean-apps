@@ -1,6 +1,14 @@
 import React from "react";
 import styles from "./SideNavBar.css";
-import classNames from 'classnames/bind';
+import classNames from "classnames/bind";
+import Strings from "../../strings";
+import { smoothScroll } from "../utils";
+import home from "../images/icons/home.svg";
+import about_us from "../images/icons/about_us.svg";
+import services from "../images/icons/services.svg";
+import contact_us from "../images/icons/contact_us.svg";
+import close from "../images/icons/close.svg";
+import Brand from "./Brand";
 
 const cx = classNames.bind(styles);
 
@@ -13,6 +21,7 @@ class SideNavBar extends React.Component {
 
         this.open = this.open.bind(this);
         this.close = this.close.bind(this);
+        this.handleNavigation = this.handleNavigation.bind(this);
     }
 
     open() {
@@ -25,6 +34,11 @@ class SideNavBar extends React.Component {
         this.setState({
             open: false
         });
+    }
+
+    handleNavigation(e) {
+        this.close();
+        smoothScroll(e);
     }
 
     blockClicks(e) {
@@ -40,11 +54,38 @@ class SideNavBar extends React.Component {
         return (
             <section className={classes} onClick={this.close}>
                 <div className={styles.sideNavContainer} onClick={this.blockClicks}>
-                    <p>Hello world</p>
-                    <p>Testing</p>
-                    <p>Testing 123</p>
-                    <p>Cool</p>
-                    <p>Messages</p>
+                    <a className={styles.closeBtn} href="#0" onClick={this.close}>
+                        <img src={close} alt="close icon" />
+                    </a>
+                    <Brand />
+                    <nav className={styles.navigation}>
+                        <ul>
+                            <li className={styles.navigation_item}>
+                                <a href="#" onClick={this.handleNavigation}>
+                                    <img src={home} alt="home icon" />
+                                    {Strings.HOME_TEXT}
+                                </a>
+                            </li>
+                            <li className={styles.navigation_item}>
+                                <a href="#about" onClick={this.handleNavigation}>
+                                    <img src={about_us} alt="about us icon" />
+                                    {Strings.ABOUT_US_TEXT}
+                                </a>
+                            </li>
+                            <li className={styles.navigation_item}>
+                                <a href="#services" onClick={this.handleNavigation}>
+                                    <img src={services} alt="services icon" />
+                                    {Strings.SERVICES_TEXT}
+                                </a>
+                            </li>
+                            <li className={styles.navigation_item}>
+                                <a href="#getintouch" onClick={this.handleNavigation}>
+                                    <img src={contact_us} alt="contact us icon" />
+                                    {Strings.CONTACT_US_TEXT}
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
             </section>
         );

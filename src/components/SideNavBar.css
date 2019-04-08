@@ -26,12 +26,18 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 80vw;
+    width: 80%;
     max-width: 400px;
     background: white;
     height: 100%;
-    transition: transform 0.3s ease-in-out;
     transform: translateX(-102%);
+    transition: transform 0.3s ease-in-out;
+}
+
+.closeBtn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
 }
 
 .sideNavBarVisible {
@@ -44,4 +50,17 @@
 
 .sideNavBarVisible .sideNavContainer {
     transform: none;
+}
+
+.navigation ul{
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+.navigation_item {
+    padding: 10px;
+}
+
+.navigation a {
+    text-decoration: none;
 }

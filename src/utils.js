@@ -3,9 +3,17 @@ function smoothScroll(event) {
     const anchorEl = event.target;
     anchorEl.blur();
 
-    document.querySelector(anchorEl.hash).scrollIntoView({
-        behavior: 'smooth'
-    });
+    if (anchorEl.hash === "") {
+        window.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: "smooth"
+        });
+    } else {
+        document.querySelector(anchorEl.hash).scrollIntoView({
+            behavior: "smooth"
+        });
+    }
 }
 
 export {
