@@ -2,7 +2,26 @@
     position: relative;
 }
 
-.carouselIndicatorContainer {
+.item {
+    width: 100%;
+    flex: 0 0 auto;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.5s ease;
+}
+
+.itemActive {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.itemContainer {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+}
+
+.indicatorContainer {
     position: absolute;
     bottom: 2rem;
     list-style: none;
@@ -13,7 +32,7 @@
     transform: translateX(-50%);
 }
 
-.carouselIndicator {
+.indicator {
     height: 0.3rem;
     width: 3rem;
     background:#9B9B9B;
@@ -23,13 +42,13 @@
     transform-origin: bottom;
 }
 
-.carouselIndicatorActive {
+.indicatorActive {
     transform: scaleY(1.6);
     background: var(--accentColor);
 }
 
 @media only screen and (max-width: 800px) {
-    .carouselIndicator {
+    .indicator {
         display: none;
     }
 } 

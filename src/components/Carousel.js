@@ -52,22 +52,46 @@ class Carousel extends React.Component {
     }
 
     render() {
-        const carouselIndicators = this.props.children.map((item, index) => {
-            const classes = cx({
-                carouselIndicator: true,
-                carouselIndicatorActive: index === this.state.activeIndex
+        let indicators = [];
+        let items = [];
+
+        this.props.children.forEach((item, index) => {
+            const indicatorClasses = cx({
+                indicator: true,
+                indicatorActive: index === this.state.activeIndex
             });
-            
-            return (
-                <li key={index} className={classes} onClick={() => this.handleIndicatorClick(index)}>
+
+            const itemClasses = cx({
+                [item.props.className]: true,
+                item: true,
+                itemActive: index === this.state.activeIndex
+            });
+
+            const itemStyle = {
+                transform: `translateX(${index * -100}%)`
+            };
+
+            indicators.push(
+                <li key={index} className={indicatorClasses} onClick={() => this.handleIndicatorClick(index)}>
                 </li>
-            )
-        })
+            );
+
+            items.push(
+                React.cloneElement(item, {
+                    className: itemClasses,
+                    style: itemStyle,
+                    key: index
+                })
+            );
+        });
+
         return (
             <div className={styles.carousel}>
-                {this.props.children[this.state.activeIndex]}
-                <ul className={styles.carouselIndicatorContainer}>
-                    {carouselIndicators}
+                <div className={styles.itemContainer}>
+                    {items}
+                </div>
+                <ul className={styles.indicatorContainer}>
+                    {indicators}
                 </ul>
             </div>
         );
