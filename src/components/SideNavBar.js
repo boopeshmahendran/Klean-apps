@@ -16,23 +16,36 @@ class SideNavBar extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            open: false
+            translateX: '-102%',
+            open: false,
+            animatable: false
         };
 
         this.open = this.open.bind(this);
         this.close = this.close.bind(this);
         this.handleNavigation = this.handleNavigation.bind(this);
+        this.handleTouchStart = this.handleTouchStart.bind(this);
+        this.handleTouchMove = this.handleTouchMove.bind(this);
+        this.handleTouchEnd = this.handleTouchEnd.bind(this);
+        this.handleTransitionEnd = this.handleTransitionEnd.bind(this);
+
+        this.startX = 0;
+        this.currentX = 0;
     }
 
     open() {
         this.setState({
-            open: true
+            open: true,
+            translateX: 0,
+            animatable: true
         });
     }
 
     close () {
         this.setState({
-            open: false
+            open: false,
+            translateX: '-102%',
+            animatable: true
         });
     }
 
@@ -41,19 +54,61 @@ class SideNavBar extends React.Component {
         smoothScroll(e);
     }
 
+    handleTouchStart(e) {
+        this.startX = e.touches[0].pageX;
+        this.currentX = e.touches[0].pageX;
+    }
+
+    handleTouchMove(e) {
+        this.currentX = e.touches[0].pageX;
+        const translateX = Math.min(0, this.currentX - this.startX);
+        this.setState({
+            translateX
+        });
+    }
+
+    handleTouchEnd(e) {
+        const translateX = Math.min(0, this.currentX - this.startX);
+        if (translateX < -100) {
+            this.close();
+        } else {
+            this.open();
+        }
+    }
+
     blockClicks(e) {
         e.stopPropagation();
+    }
+
+    handleTransitionEnd(e) {
+        this.setState({
+            animatable: false
+        });
     }
 
     render() {
         const classes = cx({
             sideNavBar: true,
-            sideNavBarVisible: this.state.open
+            sideNavBarVisible: this.state.open,
+            sideNavBarAnimatable: this.state.animatable
         });
+
+        // if translateX does not have unit, append px to it
+        let translateAmt = isNaN(this.state.translateX)? this.state.translateX : `${this.state.translateX}px`;
+        const style = {
+            transform: `translateX(${translateAmt})`
+        };
 
         return (
             <section className={classes} onClick={this.close}>
-                <div className={styles.sideNavContainer} onClick={this.blockClicks}>
+                <div style={style}
+                    className={styles.sideNavContainer}
+                    onClick={this.blockClicks}
+                    onTouchStart={this.handleTouchStart}
+                    onTouchMove={this.handleTouchMove}
+                    onTouchEnd={this.handleTouchEnd}
+                    onTransitionEnd={this.handleTransitionEnd}
+                >
                     <div className={styles.header}>
                         <Brand />
                         <a className={styles.closeBtn} href="#0" onClick={this.close}>

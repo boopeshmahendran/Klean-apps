@@ -30,8 +30,6 @@
     max-width: 400px;
     background: white;
     height: 100%;
-    transform: translateX(-102%);
-    transition: transform 0.3s ease-in-out;
 }
 
 .header {
@@ -47,14 +45,15 @@
 
 .sideNavBarVisible {
     pointer-events: auto;
+    touch-action: none;
 }
 
 .sideNavBarVisible::before {
     opacity: 1;
 }
 
-.sideNavBarVisible .sideNavContainer {
-    transform: none;
+.sideNavBarAnimatable .sideNavContainer {
+    transition: transform 0.3s ease-in-out;
 }
 
 .navigation ul{
