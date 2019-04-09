@@ -41,4 +41,7 @@
     .hamburger {
         display: inline-block;
     }
+    .brand {
+        margin: auto
+    }
 } 

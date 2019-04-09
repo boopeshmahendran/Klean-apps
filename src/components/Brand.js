@@ -3,15 +3,14 @@ import styles from "./Brand.css";
 import logo from "../images/icons/logo.svg";
 import Strings from "../../strings";
 import PropTypes from "prop-types";
+import className from "classnames/bind";
+
+const cx = className.bind(styles);
 
 class Brand extends React.Component {
     render() {
-        const style = {
-            fontSize: this.props.fontSize
-        };
-
         return (
-            <div className={styles.brand} style={style}>
+            <div className={cx("brand", this.props.className)}>
                 <img className={styles.logo} src={logo} alt="logo" />
                 <div>{Strings.BRAND_NAME}</div>
             </div>
@@ -19,12 +18,8 @@ class Brand extends React.Component {
     }
 }
 
-Brand.defaultProps = {
-    fontSize: "2rem"
-}
-
 Brand.propTypes = {
-    fontSize: PropTypes.string
+    className: PropTypes.string
 }
 
 export default Brand;

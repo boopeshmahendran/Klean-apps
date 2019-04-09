@@ -12,7 +12,7 @@ class Footer extends React.Component {
     render() {
         return (
             <footer className={styles.footer}>
-                <Brand fontSize="1.5rem" />
+                <Brand />
                 <div className={styles.colWrapper}>
                     <div className={styles.col1}>
                         <ul>

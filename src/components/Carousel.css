@@ -1,6 +1,5 @@
 .carousel {
     position: relative;
-    height: 700px;
 }
 
 .carouselIndicatorContainer {
@@ -28,3 +27,9 @@
     transform: scaleY(1.6);
     background: var(--accentColor);
 }
+
+@media only screen and (max-width: 800px) {
+    .carouselIndicator {
+        display: none;
+    }
+} 

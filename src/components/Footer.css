@@ -1,5 +1,7 @@
 .footer {
-    padding: 2rem 50px 0;
+    composes: sectionBody from "../global.css";
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .colWrapper {

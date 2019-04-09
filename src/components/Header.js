@@ -27,7 +27,7 @@ class Header extends React.Component {
                 <a className={styles.hamburger} href="#0" onClick={this.openSideNav}>
                     <img src={burger} alt="burger icon" />
                 </a>
-                <Brand />
+                <Brand className={styles.brand}/>
                 <nav className={styles.navigation}>
                     <ul>
                         <li className={styles.navigation_item}>
