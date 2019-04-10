@@ -1,0 +1,14 @@
+.processSection {
+    padding: 3rem;
+    color: var(--primaryColor);
+}
+.header {
+    composes: sectionHeader from "../global.css";
+    text-align: center;
+}
+.body {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}

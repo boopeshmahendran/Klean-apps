@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import HeroSection from "./HeroSection";
+import ProcessSection from "./ProcessSection";
 import AboutUsSection from "./AboutUsSection";
 import OurServicesSection from "./OurServicesSection";
 import GetInTouchSection from "./GetInTouchSection";
@@ -10,6 +11,7 @@ const App = () => {
   return (
     <div className="app">
       <HeroSection />
+      <ProcessSection />
       <AboutUsSection />
       <OurServicesSection />
       <GetInTouchSection />

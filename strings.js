@@ -17,6 +17,8 @@ export default {
 
     SERVICES_HEADER: "Services We Offer",
 
+    PROCESS_HEADER: "Process We Follow",
+
     FOLLOW_US: "Follow Us On:",
     SEND_MESSAGE: "Send a Message"
 }
