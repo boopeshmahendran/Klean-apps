@@ -12,7 +12,7 @@ import supportIcon from "../images/icons/support.png";
 class ProcessSection extends React.Component {
     render() {
         return (
-            <section id="services" className={styles.processSection}>
+            <section className={styles.processSection}>
                 <div className={styles.header}>{Strings.PROCESS_HEADER}</div>
                 <div className={styles.body}>
                     <Process
