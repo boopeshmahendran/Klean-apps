@@ -15,41 +15,46 @@ class Header extends React.Component {
         super(props);
 
         this.openSideNav = this.openSideNav.bind(this);
+        this.handleNavigation = this.handleNavigation.bind(this);
         this.sideBarRef = React.createRef();
     }
-    openSideNav() {
-        this.sideBarRef.current.open();
+    openSideNav(e) {
+        this.sideBarRef.current.open(e);
+    }
+    handleNavigation(e) {
+        if (e) e.preventDefault();
+        smoothScroll(e.currentTarget);
     }
     render() {
         return (
             <header className={styles.header}>
                 <SideNavBar ref={this.sideBarRef} />
-                <a className={styles.hamburger} href="#0" onClick={this.openSideNav}>
+                <a className={styles.hamburger} onClick={this.openSideNav}>
                     <img src={burger} alt="burger icon" />
                 </a>
                 <Brand className={styles.brand}/>
                 <nav className={styles.navigation}>
                     <ul>
                         <li className={styles.navigation_item}>
-                            <a href="#" onClick={smoothScroll}>
+                            <a href="#" onClick={this.handleNavigation}>
                                 <img className="icon" src={home} alt="home icon" />
                                 {Strings.HOME_TEXT}
                             </a>
                         </li>
                         <li className={styles.navigation_item}>
-                            <a href="#about" onClick={smoothScroll}>
+                            <a href="#about" onClick={this.handleNavigation}>
                                 <img className="icon" src={about_us} alt="about us icon" />
                                 {Strings.ABOUT_US_TEXT}
                             </a>
                         </li>
                         <li className={styles.navigation_item}>
-                            <a href="#services" onClick={smoothScroll}>
+                            <a href="#services" onClick={this.handleNavigation}>
                             <img className="icon" src={services} alt="services icon"/>
                             {Strings.SERVICES_TEXT}
                             </a>
                         </li>
                         <li className={styles.navigation_item}>
-                            <a href="#getintouch" onClick={smoothScroll}>
+                            <a href="#getintouch" onClick={this.handleNavigation}>
                                 <img className="icon" src={contact_us} alt="contact us icon" />
                                 {Strings.CONTACT_US_TEXT}
                             </a>

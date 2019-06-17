@@ -33,7 +33,8 @@ class SideNavBar extends React.Component {
         this.currentX = 0;
     }
 
-    open() {
+    open(e) {
+        if (e) e.preventDefault()
         this.setState({
             open: true,
             translateX: 0,
@@ -41,7 +42,8 @@ class SideNavBar extends React.Component {
         });
     }
 
-    close () {
+    close (e) {
+        if (e) e.preventDefault();
         this.setState({
             open: false,
             translateX: '-102%',
@@ -51,7 +53,8 @@ class SideNavBar extends React.Component {
 
     handleNavigation(e) {
         this.close();
-        smoothScroll(e);
+        e.preventDefault();
+        smoothScroll(e.currentTarget);
     }
 
     handleTouchStart(e) {

@@ -1,6 +1,4 @@
-function smoothScroll(event) {
-    event.preventDefault();
-    const anchorEl = event.target;
+function smoothScroll(anchorEl) {
     anchorEl.blur();
 
     if (anchorEl.hash === "") {

@@ -69,10 +69,10 @@
 .navigation_item {
     text-decoration: none;
     padding: 10px 20px;
-    display: inline-block;
+    display: flex;
+    align-items: center;
 }
 
 .navigation_item img {
-    margin-right: 30px;
-    vertical-align: middle;
+    margin-right: 20px;
 }
