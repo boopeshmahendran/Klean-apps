@@ -2,8 +2,8 @@
     position: fixed;
     width: 100%;
     box-sizing: border-box;
-    background: rgba(255, 255, 255, 0.8);
-    padding: 10px;
+    background: rgba(255, 255, 255, 1);
+    padding: 5px 10px;
     z-index: 1;
     display: flex;
     justify-content: space-between;
@@ -25,7 +25,7 @@
 .navigation_item a{
     text-decoration: none;
     display: inline-block;
-    padding: 10px;
+    padding: 7px;
     color: inherit;
     transition: all 0.2s ease-in-out;
 }
@@ -41,6 +41,9 @@
     }
     .hamburger {
         display: inline-block;
+    }
+    .header {
+        padding: 10px;
     }
     .brand {
         margin: auto

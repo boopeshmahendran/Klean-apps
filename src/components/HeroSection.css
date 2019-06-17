@@ -4,7 +4,7 @@
 
 .hero img {
     width: 100%;
-    max-height: 100vh;
+    max-height: 85vh;
     height: auto;
 }
 
@@ -34,26 +34,28 @@
     position: relative;
 }
 
-.heroButton:hover {
-    padding-left: 0.6em;
-    padding-right: 2em;
-    transform: scale(1.1);
-}
 
-.heroButton:after {
-    position: absolute;
-    content: '→';
-    opacity: 0;
-    transition: 0.5s;
-    top: 50%;
-    transform: translateY(-50%);
-    right: -1.5em;
-}
+@media only screen and (min-width: 800px) {
+    .heroButton:hover {
+        padding-left: 0.6em;
+        padding-right: 2em;
+    }
 
-.heroButton:hover:after {
-    opacity: 1;
-    right: 0.7em;
-}
+    .heroButton:after {
+        position: absolute;
+        content: '→';
+        opacity: 0;
+        transition: 0.5s;
+        top: 50%;
+        transform: translateY(-50%);
+        right: -1.5em;
+    }
+
+    .heroButton:hover:after {
+        opacity: 1;
+        right: 0.7em;
+    }
+} 
 
 @media only screen and (max-width: 800px) {
     .heroLine {

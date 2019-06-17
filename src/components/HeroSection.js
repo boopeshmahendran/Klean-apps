@@ -26,7 +26,7 @@ class HeroSection extends React.Component {
                                         {"and "}
                                     </span>
                                     <span style={{ color: CSS_CONSTANTS.accentColor }}>
-                                        {"heavenly "}
+                                        {"mind blowing "}
                                     </span>
                                     <span style={{ color: CSS_CONSTANTS.accentColor }}>
                                         {"apps and websites"}
@@ -49,7 +49,7 @@ class HeroSection extends React.Component {
                                         {"and "}
                                     </span>
                                     <span style={{ color: CSS_CONSTANTS.accentColor }}>
-                                        {"heavenly "}
+                                        {"mind blowing "}
                                     </span>
                                     <span style={{ color: CSS_CONSTANTS.accentColor }}>
                                         {"apps and websites"}
@@ -72,7 +72,7 @@ class HeroSection extends React.Component {
                                         {"and "}
                                     </span>
                                     <span style={{ color: CSS_CONSTANTS.accentColor }}>
-                                        {"heavenly "}
+                                        {"mind blowing "}
                                     </span>
                                     <span style={{ color: CSS_CONSTANTS.accentColor }}>
                                         {"apps and websites"}

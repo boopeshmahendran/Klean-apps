@@ -69,7 +69,7 @@ class SideNavBar extends React.Component {
 
     handleTouchEnd(e) {
         const translateX = Math.min(0, this.currentX - this.startX);
-        if (translateX < -100) {
+        if (translateX < -50) {
             this.close();
         } else {
             this.open();

@@ -11,16 +11,12 @@
 }
 
 .number {
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: var(--accentColor);
     margin-bottom: 10px;
 }
 .number:after {
     content: '.';
-}
-
-.process:hover {
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
 .imageSection img {
@@ -37,3 +33,9 @@
     font-size: 1.2rem;
     color: var(--secondaryFontColor);
 }
+
+@media only screen and (min-width: 800px) {
+    .process:hover {
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    }
+} 

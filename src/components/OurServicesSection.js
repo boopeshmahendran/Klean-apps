@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "./OurServicesSection.css";
-import SectionLine from "./SectionLine";
 import Strings from "../../strings";
 import androidIcon from "../images/icons/android.svg";
 import appleIcon from "../images/icons/apple.svg";
@@ -19,7 +18,6 @@ class OurServicesSection extends React.Component {
                     <ServiceSection image={appleIcon} header="iOS App Development" />
                     <ServiceSection image={webIcon} header="Web Development" />
                 </div>
-                <SectionLine></SectionLine>
             </section>
         );
     }

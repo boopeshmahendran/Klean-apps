@@ -1,5 +1,5 @@
 .sectionLine {
-    border: 1px solid var(--secondaryBrandColor);
+    border: 1px solid var(--accentColor);
     transform: rotate(-4deg);
     margin: 2rem 0;
 }
