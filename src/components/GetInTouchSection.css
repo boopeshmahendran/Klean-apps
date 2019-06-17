@@ -1,5 +1,7 @@
 .getInTouchSection {
-    padding: 3rem 0;
+    padding: 3em 0;
+    padding-top: var(--fixedHeaderHeight);
+    margin-top: - var(--fixedHeaderHeight);
 }
 
 .header {

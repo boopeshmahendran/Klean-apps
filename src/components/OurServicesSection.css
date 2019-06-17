@@ -1,5 +1,7 @@
 .ourServicesSection {
-    padding: 3rem;
+    padding: 3em;
+    padding-top: var(--fixedHeaderHeight);
+    margin-top: - var(--fixedHeaderHeight);
     background: var(--primaryColor);
     color: white;
 }

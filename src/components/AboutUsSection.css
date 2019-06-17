@@ -1,7 +1,9 @@
 .aboutUs {
     display: flex;
-    padding: 3rem;
-    margin: 40px auto 70px;
+    padding: 0 1em;
+    margin: 0 auto 3em;
+    padding-top: var(--fixedHeaderHeight);
+    margin-top: - var(--fixedHeaderHeight);
     max-width: 800px;
     color: var(--primaryColor);
     align-items: center;
