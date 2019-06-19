@@ -7,6 +7,8 @@
     "start": "webpack-dev-server -d --open --host 0.0.0.0",
     "dev": "webpack --mode development",
     "build": "webpack --mode production",
+    "predeploy": "npm run build",
+    "deploy": "aws s3 sync dist/ s3://www.mindblownapps.com",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
