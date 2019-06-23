@@ -61,7 +61,7 @@ typings/
 .next
 
 # build directory
-dist/
+build/
 
 # Mac OS directory view settings files
 .DS_Store

@@ -1,5 +1,5 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import {render} from "react-snapshot";
 import HeroSection from "./HeroSection";
 import ProcessSection from "./ProcessSection";
 import AboutUsSection from "./AboutUsSection";
@@ -21,4 +21,4 @@ const App = () => {
 };
 export default App;
 
-ReactDOM.render(<App />, document.getElementById("main"));
+render(<App />, document.getElementById("main"));

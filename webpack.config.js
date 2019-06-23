@@ -2,8 +2,12 @@ const HtmlWebPackPlugin = require("html-webpack-plugin");
 const autoprefixer = require("autoprefixer");
 const customProperties = require("postcss-custom-properties");
 const CSS_CONSTANTS = require("./src/css-constants");
+const path = require("path");
 
 module.exports = {
+  output: {
+    path: path.resolve(__dirname, "build")
+  },
   module: {
     rules: [
       {
