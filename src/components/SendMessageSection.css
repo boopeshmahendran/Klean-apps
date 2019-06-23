@@ -1,4 +1,5 @@
 .sendMessageSection {
+    position: relative;
     max-width: 400px;
     color: var(--secondaryFontColor);
     margin-bottom: 20px;

@@ -2,7 +2,8 @@ import React from "react";
 import styles from "./HeroSection.css";
 import Header from "./Header";
 import CSS_CONSTANTS from "../css-constants";
-import heroImage1 from "../images/heroImage1.png";
+import heroImageWebp from "../images/heroImage1.webp";
+import heroImageJpg from "../images/heroImage1.jpg";
 
 class HeroSection extends React.Component {
     render() {
@@ -10,7 +11,11 @@ class HeroSection extends React.Component {
             <section className={styles.heroSection}>
                 <Header />
                     <div className={styles.hero}>
-                        <img src={heroImage1} alt="hero image"/>
+                        <picture>
+                            <source type="image/webp" srcset={heroImageWebp} />
+                            <source type="image/jpeg" srcset={heroImageJpg} />
+                            <img src={heroImageJpg} alt="hero image" />
+                        </picture>
                         <div className={styles.heroContent}>
                             <div className={styles.heroLine}>
                                 <p>
