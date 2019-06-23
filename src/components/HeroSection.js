@@ -10,7 +10,7 @@ class HeroSection extends React.Component {
             <section className={styles.heroSection}>
                 <Header />
                     <div className={styles.hero}>
-                        <img src={heroImage1} />
+                        <img src={heroImage1} alt="hero image"/>
                         <div className={styles.heroContent}>
                             <div className={styles.heroLine}>
                                 <p>

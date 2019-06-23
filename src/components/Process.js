@@ -10,7 +10,7 @@ class Process extends React.Component {
                     {this.props.number}
                 </div>
                 <div className={styles.imageSection}>
-                    <img src={this.props.image} />
+                    <img src={this.props.image} alt={this.props.header}/>
                 </div>
                 <div className={styles.headerSection}>
                     <p>{this.props.header}</p>
