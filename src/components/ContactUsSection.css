@@ -1,4 +1,5 @@
 .contactUsSection {
+    position: relative;
     color: white;
     max-width: 300px;
 }

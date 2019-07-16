@@ -7,7 +7,7 @@ class ServiceSection extends React.Component {
         return (
             <section className={styles.serviceSection}>
                 <div className={styles.imageSection}>
-                    <img src={this.props.image} />
+                    <img src={this.props.image} alt={this.props.header}/>
                 </div>
                 <div className={styles.contentSection}>
                     <p>{this.props.header}</p>

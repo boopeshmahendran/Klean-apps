@@ -3,6 +3,8 @@ import styles from "./GetInTouchSection.css";
 import SendMessageSection from "./SendMessageSection";
 import ContactUssection from "./ContactUsSection";
 import CSS_CONSTANTS from "../css-constants";
+import mapImageWebp from "../images/map.webp";
+import mapImageJpg from "../images/map.jpg";
 
 class GetInTouchSection extends React.Component {
     render() {
@@ -17,6 +19,11 @@ class GetInTouchSection extends React.Component {
                     </span>
                 </div>
                 <div className={styles.body}>
+                    <picture>
+                        <source type="image/webp" srcset={mapImageWebp} />
+                        <source type="image/jpeg" srcset={mapImageJpg} />
+                        <img className={styles.bgImage} src={mapImageJpg} alt="Map image" />
+                    </picture>
                     <SendMessageSection />
                     <ContactUssection />
                 </div>
